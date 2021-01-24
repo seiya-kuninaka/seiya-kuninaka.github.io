@@ -97,14 +97,8 @@ li {
 ---------------------------------*/
 
 .head-animation {
-  /* opacity: 0; */
   display: none;
   transform: translateY(-1000%);
-}
-
-.head-animation-visible {
-  opacity: 1;
-  transform: translateY(100%);
 }
 
 video {

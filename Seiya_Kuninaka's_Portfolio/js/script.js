@@ -43,10 +43,10 @@ $(function () {
   });
 
   (function() {
-    const target = document.getElementById('logo-name'),
-      height = document.getElementById('video').clientHeight,
-      height_y =height - 100;
-        console.log('height: ' + height + 'px  ' + 'height_y: ' + height_y + 'px');
+    const target   = document.getElementById('logo-name'),
+      height       = document.getElementById('video').clientHeight,
+      height_y     =height - 100;
+        // console.log('height: ' + height + 'px  ' + 'height_y: ' + height_y + 'px');
   let offset       = 0,
       lastPosition = 0,// 現在地を示す変数を定義
       ticking      = false;
@@ -55,9 +55,9 @@ $(function () {
     if (lastPosition > height_y) {
       if (lastPosition > offset) {
         target.classList.add('head-animation');
-      } else if (lastPosition > height_y && lastPosition < offset) {
+      } else if (lastPosition > height && lastPosition < offset) {
         target.classList.add('head-animation');
-      } else if (lastPosition < height_y) {
+      } else if (lastPosition < height) {
         target.classList.remove('head-animation');
       } else {
         target.classList.remove('head-animation');
