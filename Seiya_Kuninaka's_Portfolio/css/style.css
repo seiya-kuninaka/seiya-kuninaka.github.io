@@ -332,6 +332,7 @@ video {
 }
 
 table th {
+  white-space: nowrap;
   text-align: left;
 }
 
