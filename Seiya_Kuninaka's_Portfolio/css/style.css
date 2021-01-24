@@ -97,7 +97,8 @@ li {
 ---------------------------------*/
 
 .head-animation {
-  opacity: 0;
+  /* opacity: 0; */
+  display: none;
   transform: translateY(-1000%);
 }
 
@@ -607,6 +608,10 @@ table td {
     width: 100px;
     max-width: 100%;
     margin: 0 auto 20px;
+  }
+
+  table {
+    margin: auto;
   }
 
   /* Skill */
